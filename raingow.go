@@ -1,7 +1,6 @@
 package raingow
 
 import (
-	"fmt"
 	"math"
 	"github.com/gookit/color"
 )
@@ -16,7 +15,7 @@ func colour_code(freq float64, spread float64) color.RGBColor {
 }
 
 
-func Raingow_line(source_str string, offset int, reverse_palette bool, span float64) string {
+func Raingow_line(source_str string, span float64) string {
 	// TODO give the ability to pass state of colour_index between
 	// iterations (or a different wrapper function) so that we can
 	// span colours across multiple lines
