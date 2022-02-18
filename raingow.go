@@ -1,5 +1,4 @@
-//package raingow
-package main
+package raingow
 
 import (
 	"fmt"
@@ -30,24 +29,4 @@ func Raingow_line(source_str string, offset int, reverse_palette bool, span floa
 	}
 
 	return output_str
-}
-
-
-func main() {
-
-
-	// TODO why does span lead to the same colour after a few repetitions when the spam is len(colours)?
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line", 0, false, 1.0))
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line", 0, false, 2.0))
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line", 0, false, 3.0))
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line", 0, false, 4.0))
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line", 0, false, 5.0))
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line", 0, false, 6.0))
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line", 0, false, 7.0))
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line", 0, false, 8.0))
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line", 0, false, 9.0))
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line reversed", 0, true, 3.0))
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line offset 1", 1, false, 3.0))
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line offset 2", 2, false, 3.0))
-	fmt.Println(Raingow_line("My fairly long long long long long long long long long testing line offset 3", 3, false, 3.0))
 }
